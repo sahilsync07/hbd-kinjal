@@ -577,7 +577,7 @@ const memories = [
         icon: Heart,
         image: p49,
         rotate: -2
-    }  }
+    }
 ];
 
 export default function Timeline() {
