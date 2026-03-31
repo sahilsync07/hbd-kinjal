@@ -7,7 +7,7 @@ import Timeline from './components/Timeline';
 import MarqueeBanner from './components/MarqueeBanner';
 import TimeCounter from './components/TimeCounter';
 import FallingConfetti from './components/FallingConfetti';
-import ScratchReveal from './components/ScratchReveal';
+
 import BirthdayLetter from './components/BirthdayLetter';
 import FooterNew from './components/FooterNew';
 import './index.css';
@@ -64,9 +64,7 @@ function App() {
           <FallingConfetti />
         </div>
 
-        <div className="gradient-section-c">
-          <ScratchReveal />
-        </div>
+
 
         <BirthdayLetter sisterName={sisterName} />
         <FooterNew />
