@@ -216,15 +216,7 @@ const memories = [
         image: p16,
         rotate: -3
     },
-    {
-        id: 18,
-        date: "Spiritual Run",
-        title: "Vizag Tirupati Temple",
-        description: "A beautiful memory of us both visiting the Tirupati Temple together.",
-        icon: Heart,
-        image: p56,
-        rotate: 2
-    },
+
     {
         id: 19,
         date: "Travels",
@@ -234,15 +226,7 @@ const memories = [
         image: p17,
         rotate: 3
     },
-    {
-        id: 20,
-        date: "Train Upgrade",
-        title: "Vande Bharat Experience",
-        description: "Experiencing the amazing Vande Bharat train for the first time!",
-        icon: Camera,
-        image: p55,
-        rotate: -2
-    },
+
     {
         id: 21,
         date: "Together",
@@ -424,6 +408,15 @@ const memories = [
         rotate: 2
     },
     {
+        id: 20,
+        date: "Train Upgrade",
+        title: "Vande Bharat Experience",
+        description: "Experiencing the amazing Vande Bharat train for the first time!",
+        icon: Camera,
+        image: p55,
+        rotate: -2
+    },
+    {
         id: 41,
         date: "God's Own Country",
         title: "Trip to Kerala",
@@ -431,6 +424,15 @@ const memories = [
         icon: MapPin,
         image: p52,
         rotate: -2
+    },
+    {
+        id: 18,
+        date: "Spiritual Run",
+        title: "Vizag Tirupati Temple",
+        description: "A beautiful memory of us both visiting the Tirupati Temple together.",
+        icon: Heart,
+        image: p56,
+        rotate: 2
     },
     {
         id: 42,
