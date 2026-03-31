@@ -67,10 +67,9 @@ export default function FooterNew() {
                 animate={isInView ? { opacity: 1 } : {}}
                 transition={{ duration: 1 }}
             >
-                <div className="outro-text">Happy Birthday, Kinjal</div>
-
-                <h2 className="cinema-title">Enjoy Your Special Day</h2>
-                <p className="cinema-subtitle">Here's to many more amazing years ahead. 🎂</p>
+                <div className="outro-text">Always your biggest supporter</div>
+                <h2 className="cinema-title">You're the Best Sister</h2>
+                <p className="cinema-subtitle">Forever your partner in crime. 🌿</p>
 
                 <div className="final-cta-container">
                     <motion.button
