@@ -8,7 +8,7 @@ export default function Preloader({ onComplete }) {
     const [isComplete, setIsComplete] = useState(false);
 
     // Fun birthday emojis for the floating particles
-    const emojis = ['🎈', '🎉', '🎁', '✨', '🎂', '⭐'];
+    const emojis = ['🎉', '🎁', '✨', '🎂', '⭐'];
 
     useEffect(() => {
         // Simulate loading progress

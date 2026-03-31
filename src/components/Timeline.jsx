@@ -688,7 +688,7 @@ export default function Timeline() {
                                     transformOrigin: 'center'
                                 }}
                             >
-                                🎈
+                                🦋
                             </text>
                         </motion.g>
                     </motion.g>
