@@ -1,0 +1,117 @@
+.falling-hearts-container {
+  position: relative;
+  height: 80vh;
+  width: 100%;
+  overflow: hidden;
+  /* Gradient handled by parent/App.css */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: var(--spacing-xl);
+  text-align: center;
+}
+
+.falling-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: clamp(2.5rem, 6vw, 3.5rem);
+  background: var(--gradient-romantic);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: var(--spacing-sm);
+  z-index: 10;
+}
+
+.falling-subtitle {
+  font-family: 'Outfit', sans-serif;
+  color: var(--green-600);
+  background: rgba(255, 255, 255, 0.8);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 1rem;
+  z-index: 10;
+  backdrop-filter: blur(4px);
+}
+
+.rain-area {
+  position: absolute;
+  inset: 0;
+  pointer-events: none; /* Let clicks pass through if not on a heart */
+}
+
+.falling-heart {
+  position: absolute;
+  cursor: pointer;
+  pointer-events: auto; /* Re-enable clicks on hearts */
+  filter: drop-shadow(0 0 5px rgba(34, 197, 94, 0.5));
+  top: -50px; /* Start above screen */
+  padding: 20px; /* Larger hit area */
+}
+
+.falling-heart:hover {
+  filter: drop-shadow(0 0 10px rgba(34, 197, 94, 0.8));
+  scale: 1.2 !important; /* Override inline scale on hover */
+  z-index: 20;
+}
+
+.reason-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.3);
+  backdrop-filter: blur(5px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.reason-card {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: 30px;
+  text-align: center;
+  max-width: 320px;
+  width: 100%;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  border: 2px solid white;
+}
+
+.reason-emoji {
+  font-size: 4rem;
+  animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.reason-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--green-700);
+  line-height: 1.2;
+}
+
+.close-reason {
+  background: var(--gradient-romantic);
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+  box-shadow: 0 5px 15px rgba(34, 197, 94, 0.3);
+}
+
+.close-reason:hover {
+  transform: translateY(-2px);
+}

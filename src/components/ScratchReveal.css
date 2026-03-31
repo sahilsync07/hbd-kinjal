@@ -1,0 +1,76 @@
+/* ScratchReveal.css - Refined & "Not Cringe" */
+.scratch-reveal-section {
+    padding: var(--spacing-xl) var(--spacing-md);
+    text-align: center;
+    background: transparent;
+    position: relative;
+}
+
+/* Relevant Heading Style - Cleaner Font */
+.scratch-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 5vw, 3rem);
+    color: #881337; /* Rose 900 for good contrast */
+    margin-bottom: var(--spacing-lg);
+    font-weight: 700;
+}
+
+.scratch-container {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    margin: 0 auto;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: 
+        0 20px 40px rgba(0,0,0,0.1),
+        0 8px 16px rgba(0,0,0,0.05);
+    background: white;
+    border: 1px solid var(--rose-100);
+}
+
+/* Comparison/Reveal Container */
+.reveal-content {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #fff 0%, #fff1f2 100%);
+    padding: 3rem;
+}
+
+.joke-text {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #881337; /* Rose 900 for good contrast */
+    line-height: 1.5;
+    margin: 0;
+}
+
+.scratch-canvas {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    cursor: crosshair;
+    touch-action: none;
+    transition: opacity 0.8s ease-out;
+}
+
+.scratch-canvas.fade-out {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Floating Emoji Animation */
+.evaporating-emoji {
+    position: absolute;
+    z-index: 10;
+    font-size: 2.5rem;
+    pointer-events: none;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+}

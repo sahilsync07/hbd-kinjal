@@ -1,0 +1,159 @@
+/* HeroNew.css - Cinematic Image Landing */
+
+.hero-new {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background: #000; /* Fallback */
+}
+
+/* --- 1. Background Image Styling --- */
+.hero-image-container {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.hero-image-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    will-change: transform;
+}
+
+.hero-bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.9; /* Slight dim for text readability */
+}
+
+/* Gradient Overlay - Essential for text readability at bottom */
+.hero-vignette {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0) 0%,
+        rgba(0,0,0,0) 50%,
+        rgba(0,0,0,0.4) 75%,
+        rgba(0,0,0,0.9) 100%
+    );
+    z-index: 1;
+}
+
+/* --- 2. Bottom Content Styling --- */
+.hero-content-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    padding: 0 var(--spacing-md) 8vh var(--spacing-md); /* Reduced from 15vh to move everything down */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.content-wrapper-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem; /* Reduced from 3rem to bring closer to heart */
+    text-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+.hero-greeting {
+    font-family: 'Playfair Display', serif; /* Matched to bottom text */
+    font-style: italic;
+    font-size: 1.2rem; /* Increased slightly for readability */
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+}
+
+.hero-main-title {
+    /* Using Dancing Script as requested (same as polaroid headings) */
+    font-family: 'Dancing Script', cursive;
+    font-size: clamp(4rem, 15vw, 7rem); /* Slightly larger for the beautiful script font */
+    font-weight: 700;
+    margin: 0;
+    color: #ec4899; /* Theme Pink 500 */
+    text-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Subtle depth */
+    min-height: 1.2em; /* Ensure layout stability during typing */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.typewriter-cursor {
+    font-weight: 300;
+    margin-left: 5px;
+    color: rgba(255, 255, 255, 0.6);
+    animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.hero-divider {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.6);
+    margin: 0.5rem 0;
+}
+
+.hero-date {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+}
+
+/* --- 3. Scroll Indicator (Heart & Arrow) --- */
+.hero-scroll-trigger {
+    margin-top: 0.5rem; /* Reduced from 1.5rem */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.scroll-chest {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.scroll-heart-icon {
+    color: rgba(255, 255, 255, 0.6);
+    animation: heartPulse 2s infinite ease-in-out;
+}
+
+.scroll-arrow {
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid rgba(255, 255, 255, 0.4);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+    transform: rotate(45deg);
+    margin-top: -4px;
+    animation: arrowScroll 2s infinite ease-out;
+}
+
+@keyframes heartPulse {
+    0%, 100% { transform: scale(1); opacity: 0.6; }
+    50% { transform: scale(1.2); opacity: 0.9; }
+}
+
+@keyframes arrowScroll {
+    0% { transform: translateY(0) rotate(45deg); opacity: 0; }
+    50% { opacity: 0.8; }
+    100% { transform: translateY(15px) rotate(45deg); opacity: 0; }
+}
