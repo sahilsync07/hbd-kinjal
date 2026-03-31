@@ -568,15 +568,6 @@ const memories = [
         icon: Heart,
         image: p49,
         rotate: -2
-    },
-    {
-        id: 58,
-        date: "Favorites",
-        title: "A Little Jealous",
-        description: "Me jokingly acting jealous because you obviously became our parents' favorite!",
-        icon: Star,
-        image: p50,
-        rotate: 3
     }
 ];
 
