@@ -163,6 +163,15 @@ const memories = [
         rotate: 3
     },
     {
+        id: 55,
+        date: "Music Buddy",
+        title: "Vibing Together",
+        description: "Sharing earphones and listening to our favorite tracks together.",
+        icon: Heart,
+        image: p47,
+        rotate: -3
+    },
+    {
         id: 12,
         date: "Cool Rider",
         title: "Red Vespa",
@@ -273,6 +282,15 @@ const memories = [
         rotate: -3
     },
     {
+        id: 28,
+        date: "Fancy Dress",
+        title: "Dressed as Radha",
+        description: "Looking absolutely divine as Radha for the school fancy dress competition.",
+        icon: Camera,
+        image: p26,
+        rotate: 3
+    },
+    {
         id: 26,
         date: "Dad & Daughter",
         title: "Cool Pair",
@@ -290,15 +308,7 @@ const memories = [
         image: p25,
         rotate: -2
     },
-    {
-        id: 28,
-        date: "Fancy Dress",
-        title: "Dressed as Radha",
-        description: "Looking absolutely divine as Radha for the school fancy dress competition.",
-        icon: Camera,
-        image: p26,
-        rotate: 3
-    },
+
     {
         id: 29,
         date: "Performing Arts",
@@ -317,15 +327,7 @@ const memories = [
         image: p54,
         rotate: 2
     },
-    {
-        id: 31,
-        date: "Performer",
-        title: "Annual Day",
-        description: "You're all ready for your grand annual day performance at school!",
-        icon: Star,
-        image: p58,
-        rotate: -2
-    },
+
     {
         id: 32,
         date: "Education",
@@ -344,23 +346,16 @@ const memories = [
         image: p29,
         rotate: -2
     },
+
+
     {
-        id: 34,
-        date: "Holidays",
-        title: "Diwali Vibes",
-        description: "A super cool Diwali celebration filled with lights and smiles.",
-        icon: Sun,
-        image: p57,
-        rotate: 3
-    },
-    {
-        id: 35,
-        date: "Fun Getaway",
-        title: "Chilika Lake Trip",
-        description: "Our incredibly fun trip to Chilika. Surrounded by nature and endless water.",
-        icon: MapPin,
-        image: p51,
-        rotate: -3
+        id: 40,
+        date: "Hill Station",
+        title: "Shimla Trip",
+        description: "Looking absolutely beautiful in the traditional Himachali costume during our Shimla trip.",
+        icon: Star,
+        image: p34,
+        rotate: 2
     },
     {
         id: 36,
@@ -390,57 +385,30 @@ const memories = [
         rotate: 3
     },
     {
-        id: 39,
-        date: "Snow Ready",
-        title: "Anticipation",
-        description: "All geared up in the snow costume, eagerly waiting to go out and play!",
-        icon: Heart,
-        image: p33,
-        rotate: -3
+        id: 52,
+        date: "Content Creator",
+        title: "Vlogging Time",
+        description: "Me forcing you to hold the camera and start vlogging our lives!",
+        icon: Camera,
+        image: p44,
+        rotate: 2
     },
     {
-        id: 40,
-        date: "Hill Station",
-        title: "Shimla Trip",
-        description: "Looking absolutely beautiful in the traditional Himachali costume during our Shimla trip.",
+        id: 53,
+        date: "First Vlog",
+        title: "Cruise Trip",
+        description: "The official start of your first vlog video aboard our cruise trip.",
         icon: Star,
-        image: p34,
-        rotate: 2
-    },
-    {
-        id: 20,
-        date: "Train Upgrade",
-        title: "Vande Bharat Experience",
-        description: "Experiencing the amazing Vande Bharat train for the first time!",
-        icon: Camera,
-        image: p55,
+        image: p45,
         rotate: -2
     },
     {
-        id: 41,
-        date: "God's Own Country",
-        title: "Trip to Kerala",
-        description: "Our amazing trip exploring the beautiful greenery and waters of Kerala.",
-        icon: MapPin,
-        image: p52,
-        rotate: -2
-    },
-    {
-        id: 18,
-        date: "Spiritual Run",
-        title: "Vizag Tirupati Temple",
-        description: "A beautiful memory of us both visiting the Tirupati Temple together.",
-        icon: Heart,
-        image: p56,
-        rotate: 2
-    },
-    {
-        id: 42,
-        date: "Waterways",
-        title: "Kerala Houseboat",
-        description: "A beautiful picture of us four enjoying the peaceful Kerala houseboat ride.",
-        icon: Camera,
-        image: p53,
+        id: 54,
+        date: "Birthday!",
+        title: "11th Birthday",
+        description: "Your grand 11th year birthday celebration! Growing up so fast.",
+        icon: Gift,
+        image: p46,
         rotate: 3
     },
     {
@@ -461,6 +429,18 @@ const memories = [
         image: p36,
         rotate: 2
     },
+    {
+        id: 39,
+        date: "Snow Ready",
+        title: "Anticipation",
+        description: "All geared up in the snow costume, eagerly waiting to go out and play!",
+        icon: Heart,
+        image: p33,
+        rotate: -3
+    },
+
+
+
     {
         id: 45,
         date: "Dubai Bound",
@@ -524,41 +504,70 @@ const memories = [
         image: p43,
         rotate: -3
     },
+
+
     {
-        id: 52,
-        date: "Content Creator",
-        title: "Vlogging Time",
-        description: "Me forcing you to hold the camera and start vlogging our lives!",
-        icon: Camera,
-        image: p44,
-        rotate: 2
+        id: 35,
+        date: "Fun Getaway",
+        title: "Chilika Lake Trip",
+        description: "Our incredibly fun trip to Chilika. Surrounded by nature and endless water.",
+        icon: MapPin,
+        image: p51,
+        rotate: -3
     },
     {
-        id: 53,
-        date: "First Vlog",
-        title: "Cruise Trip",
-        description: "The official start of your first vlog video aboard our cruise trip.",
-        icon: Star,
-        image: p45,
-        rotate: -2
-    },
-    {
-        id: 54,
-        date: "Birthday!",
-        title: "11th Birthday",
-        description: "Your grand 11th year birthday celebration! Growing up so fast.",
-        icon: Gift,
-        image: p46,
+        id: 34,
+        date: "Holidays",
+        title: "Diwali Vibes",
+        description: "A super cool Diwali celebration filled with lights and smiles.",
+        icon: Sun,
+        image: p57,
         rotate: 3
     },
     {
-        id: 55,
-        date: "Music Buddy",
-        title: "Vibing Together",
-        description: "Sharing earphones and listening to our favorite tracks together.",
+        id: 31,
+        date: "Performer",
+        title: "Annual Day",
+        description: "You're all ready for your grand annual day performance at school!",
+        icon: Star,
+        image: p58,
+        rotate: -2
+    },
+    {
+        id: 20,
+        date: "Train Upgrade",
+        title: "Vande Bharat Experience",
+        description: "Experiencing the amazing Vande Bharat train for the first time!",
+        icon: Camera,
+        image: p55,
+        rotate: -2
+    },
+    {
+        id: 41,
+        date: "God's Own Country",
+        title: "Trip to Kerala",
+        description: "Our amazing trip exploring the beautiful greenery and waters of Kerala.",
+        icon: MapPin,
+        image: p52,
+        rotate: -2
+    },
+    {
+        id: 18,
+        date: "Spiritual Run",
+        title: "Vizag Tirupati Temple",
+        description: "A beautiful memory of us both visiting the Tirupati Temple together.",
         icon: Heart,
-        image: p47,
-        rotate: -3
+        image: p56,
+        rotate: 2
+    },
+    {
+        id: 42,
+        date: "Waterways",
+        title: "Kerala Houseboat",
+        description: "A beautiful picture of us four enjoying the peaceful Kerala houseboat ride.",
+        icon: Camera,
+        image: p53,
+        rotate: 3
     },
     {
         id: 57,

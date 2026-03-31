@@ -63,7 +63,7 @@ const TimeCounter = () => {
                     <span className="counter-label">Secs</span>
                 </div>
             </div>
-            <p className="counter-footer">...and making the world brighter every second!</p>
+            <p className="counter-footer">...and clearly the favorite sibling!</p>
         </div>
     );
 };

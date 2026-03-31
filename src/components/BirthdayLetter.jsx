@@ -113,10 +113,10 @@ export default function BirthdayLetter({ sisterName = "Kinjal" }) {
                                     You are my partner in crime, my annoying sibling, and my best friend.
                                 </p>
                                 <p>
-                                    Here's to a lifetime of late-night talks, endless laughter, and wishing you all the success and happiness in the world.
+                                    Keep being the awesome person you are. Wishing you the best birthday ever!
                                 </p>
                                 <div className="signature-block">
-                                    <p>Forever Yours,</p>
+                                    <p>Always your brother,</p>
                                     <h3>Sahil</h3>
                                 </div>
                             </div>
