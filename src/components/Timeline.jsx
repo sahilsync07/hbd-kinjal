@@ -561,15 +561,6 @@ const memories = [
         rotate: -3
     },
     {
-        id: 56,
-        date: "Farewell",
-        title: "Higher Studies",
-        description: "You and mom giving me a heartfelt farewell when I left for higher studies.",
-        icon: Camera,
-        image: p48,
-        rotate: 2
-    },
-    {
         id: 57,
         date: "Growing Up",
         title: "Rakhi Memories",
