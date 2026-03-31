@@ -2,7 +2,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef, useEffect, useState } from 'react';
 import { Gift } from 'lucide-react';
 import './HeroNew.css';
-import introPic from '../assets/photos/me-and-kinjal-standing-good-photo-going-for-outing.jpg';
+import introPic from '../assets/photos/kinjal-cover-photo-for-website.jpg';
 
 export default function HeroNew({ sisterName = "Kinjal" }) {
     const containerRef = useRef(null);
