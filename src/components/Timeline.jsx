@@ -525,15 +525,6 @@ const memories = [
         rotate: 3
     },
     {
-        id: 31,
-        date: "Performer",
-        title: "Annual Day",
-        description: "You're all ready for your grand annual day performance at school!",
-        icon: Star,
-        image: p58,
-        rotate: -2
-    },
-    {
         id: 20,
         date: "Train Upgrade",
         title: "Vande Bharat Experience",
@@ -570,6 +561,15 @@ const memories = [
         rotate: 3
     },
     {
+        id: 31,
+        date: "Performer",
+        title: "Annual Day",
+        description: "You're all ready for your grand annual day performance at school!",
+        icon: Star,
+        image: p58,
+        rotate: -2
+    },
+    {
         id: 57,
         date: "Growing Up",
         title: "Rakhi Memories",
@@ -577,7 +577,7 @@ const memories = [
         icon: Heart,
         image: p49,
         rotate: -2
-    }
+    }  }
 ];
 
 export default function Timeline() {

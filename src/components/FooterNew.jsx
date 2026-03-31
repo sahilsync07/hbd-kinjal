@@ -79,7 +79,7 @@ export default function FooterNew() {
                         whileTap={{ scale: 0.95 }}
                         onClick={handleBigLove}
                     >
-                        Send Birthday Wishes ✨
+                        Big Hug! 🤗
                     </motion.button>
                 </div>
             </motion.div>
